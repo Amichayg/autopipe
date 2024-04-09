@@ -3,9 +3,9 @@ import git
 import yaml
 import os
 
-TOKEN = ''
-REPO = ''
-WORKFLOW_PATH = ''
+TOKEN = os.environ['GITHUB_TOKEN']
+REPO = os.environ['GITHUB_REPOSITORY']
+#WORKFLOW_PATH = '.github'
 
 
 g = Github(TOKEN)
